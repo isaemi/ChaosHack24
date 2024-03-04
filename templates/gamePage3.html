@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bedtime Stories (Chaos Edition)</title>
+<link rel="stylesheet" href="../static/style.css">
+<link rel="icon" type="image/x-icon" href="../static/images/favicon.png">
+</head>
+<body id="second">  
+  <div class="game-container">
+    <div id="something"></div>
+    <div id="question-box">
+        <img src="../static/images/dragon3.jpeg" alt="Dragon Image">
+      <p>The dragon's fire breath is not effective. But it's ready to fight you back.</p>
+    </div>
+    <div class="choices">
+      <button id="buttonChoice1" >Summon Rayquaza.</button>
+      <button id="buttonChoice2">Summon Pikachu.</button>
+      <button id="buttonChoice3">Hold your sword.</button>
+    </div>
+    <br>
+    
+  </div>
+  <script >
+    document.getElementById("buttonChoice1").addEventListener("click", function() {
+    window.location.href = "lastPage.html";
+    });
+  </script>
+  
+</body>
+</html>

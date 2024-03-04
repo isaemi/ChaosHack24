@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bedtime Stories (Chaos Edition)</title>
+<link rel="stylesheet" href="../static/style.css">
+<link rel="icon" type="image/x-icon" href="../static/images/favicon.png">
+</head>
+<body id="second">  
+  <div class="game-container">
+    <div id="something"></div>
+    <div id="question-box">
+      <img src="../static/images/dragon1.jpeg" alt="Dragon Image">
+      <p>You are fighting a dragon. It's coming at you at high speeds. Its' mouth is going to gobble you up. What will you do next?</p>
+    </div>
+    <div class="choices">
+      <button id="buttonChoice1" >Run away as fast as possible</button>
+      <button id="buttonChoice2">Punch its' face with your bare hands</button>
+      <button id="buttonChoice3">Accept your fate</button>
+    </div>
+    <br>
+  </div>
+  <script >
+    document.getElementById("buttonChoice1").addEventListener("click", function() {
+      window.location.href = "gamePage2.html";
+    })
+    
+  </script>
+  
+</body>
+</html>

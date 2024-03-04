@@ -1,0 +1,97 @@
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../static/images/background.png');
+  background-size: cover;
+}
+#second{
+  background-image: url('../static/images/background3.png');
+  background-size: cover;
+  animation: rotate 1s 1;
+}
+.game-container {
+    width: 700px;
+    height: 700px;
+    border: 4px solid #49FFFF;
+    box-shadow: inset 0px 0px 40px 40px #D33BFF,
+              0 0 0 10px #32557f,
+              0 0 0 15px #D33BFF,
+              0 2px 5px 15px rgba(0,0,0,.6);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #firstImage{
+    margin-top: 10;
+    width: 600px;
+  }
+  #gameImage{
+    width: 100px;
+  }
+  #question-box{
+    width: 80%;
+    background-color: #fbeeff;
+    color: #634087;
+    padding: 20px;
+    border: 2px solid #a661eb;
+    border-radius: 10px;
+    margin-bottom: 20px;  
+    text-align: center;
+  }
+  #start{
+    background-color: #534087;
+    color: #fbeeff;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #start:hover{
+    background-color: #222424;
+    color: #fbeeff;
+  }
+  .choices {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #buttonChoice1, #buttonChoice2, #buttonChoice3 {
+    padding: 20px;
+    background-color: #fbeeff;
+    color: #634087;
+    border: 1px solid ;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+    #input{
+      width: auto;
+      padding: 20px;
+      background-color: #fbeeff;
+      color: #634087;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-align: center;
+    }
+
+  #buttonChoice1:hover, #buttonChoice2:hover, #buttonChoice3:hover, #input:hover {
+    background-color: #634087;
+    color: #deb7ff;
+  }
